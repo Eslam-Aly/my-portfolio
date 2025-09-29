@@ -5,17 +5,23 @@ import About from "./components/About";
 import Pricing from "./components/Pricing";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import WorkingSteps from "./components/WorkingSteps";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-primary overflow-x-hidden ">
+    <main className="font-primary overflow-x-hidden ">
       <Navbar />
       <Hero />
       <Services />
       <About />
+      <WorkingSteps />
       <Pricing />
       <Testimonials />
-    </div>
+      <Contact />
+      <Footer />
+    </main>
   );
 }
 
