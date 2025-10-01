@@ -5,17 +5,17 @@ import { IoArrowForwardCircleSharp } from "react-icons/io5";
 
 function Hero() {
   return (
-    <section id="home" className="bg-herobg h-screen pt-20 text-white ">
-      <div className="container flex flex-col md:flex-row items-center justify-between p-8 mx-auto overflow-y-hidden gap-12 h-full">
+    <section id="home" className="bg-herobg md:h-screen md:pt-20 text-white ">
+      <div className="container flex flex-col md:flex-row items-center justify-between p-4 mx-auto overflow-y-hidden md:gap-8 h-full">
         {/*left side*/}
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="md:w-1/2"
+          className="md:w-1/2 order-2 md:order-1"
         >
-          <h1 className="text-4xl md:text-6xl font-secondary font-bold  md:w-3/4 leading-snug">
+          <h1 className="text-4xl md:text-6xl font-secondary font-bold  md: leading-snug">
             Eslam Aly
           </h1>
           <h2 className="text-2xl font-light mb-4">Software Engineer</h2>
@@ -41,13 +41,9 @@ function Hero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="md:w-4/5 h-full lg:w-11/12"
+          className="md:w-1/2 order-1 md:order-2"
         >
-          <img
-            src={hero1}
-            alt="hero image"
-            className="w-full object-cover mask-image [mask-image:linear-gradient(to right,black,transparent)]"
-          />
+          <img src={hero1} alt="hero image" className="w-full object-cover" />
         </motion.div>
       </div>
     </section>

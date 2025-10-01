@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import fadeIn from "../utilis/animationVariants";
+import aboutImage from "../assets/about.jpeg";
 
 function WorkingSteps() {
   return (
-    <section className="relative bg-cover bg-center py-12 bg-[url(/work-proceess.webp)]">
+    <section className="relative bg-cover bg-center py-12 bg-about h-full">
       <div className="absolute inset-0 bg-herobg/85"></div>
       <div className="relative container mx-auto px-4 py-20">
         <motion.div
@@ -27,7 +28,7 @@ function WorkingSteps() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="flex flex-col md:w-4/5 mx-auto md:flex-row gap-8"
+          className="flex flex-col md:w-4/5 mx-auto md:flex-row gap-8 h-full"
         >
           <div className="relative bg-white text-center rounded-lg p-6 flex-1">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white size-14 rounded-full flex items-center justify-center">

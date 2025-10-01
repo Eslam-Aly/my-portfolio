@@ -9,6 +9,11 @@
 
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Syne", sans-serif;
+
+  --background-image-about: url("./assets/about.jpeg");
+}
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {

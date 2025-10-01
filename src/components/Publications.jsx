@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import fadeIn from "../utilis/animationVariants";
+import fadeIn from "../utilis/animationVariants.js";
 import packages from "../data/pricingData.js";
 
-function Pricing() {
+function Publications() {
   const handleScroll = () => {
     const targetElement = document.getElementById("contact");
     if (targetElement) {
@@ -14,7 +14,10 @@ function Pricing() {
   };
 
   return (
-    <section id="pricing" className=" text-black bg-[#f7f8fc] pt-18 md:pt-40">
+    <section
+      id="publications"
+      className=" text-black bg-[#f7f8fc] pt-18 md:pt-40"
+    >
       <div className="container mx-auto px-8">
         <motion.div
           variants={fadeIn("left", 0.2)}
@@ -69,4 +72,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default Publications;

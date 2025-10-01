@@ -11,7 +11,13 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    const sections = ["home", "services", "about", "pricing", "testimonials"];
+    const sections = [
+      "home",
+      "projects",
+      "about",
+      "publications",
+      "testimonials",
+    ];
     const scrollPosition = window.scrollY + 100;
 
     sections.forEach((section) => {
@@ -64,24 +70,7 @@ const Navbar = () => {
           Home
         </motion.a>
       </li>
-      <li>
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveSection("services");
-            handleCloseMenu();
-            handleScrollTo("services");
-          }}
-          href="#services"
-          className={`text-white text-xl md:text-2xl  ${
-            activeSection === "services" ? "isActive" : ""
-          }`}
-        >
-          Projects
-        </motion.a>
-      </li>
+
       <li>
         <motion.a
           whileHover={{ scale: 1.1 }}
@@ -106,16 +95,34 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           onClick={(e) => {
             e.preventDefault();
-            setActiveSection("pricing");
+            setActiveSection("projects");
             handleCloseMenu();
-            handleScrollTo("pricing");
+            handleScrollTo("projects");
           }}
-          href="#pricing"
-          className={`text-white text-xl md:text-2xl ${
-            activeSection === "pricing" ? "isActive" : ""
+          href="#projects"
+          className={`text-white text-xl md:text-2xl  ${
+            activeSection === "projects" ? "isActive" : ""
           }`}
         >
-          Pricing
+          Projects
+        </motion.a>
+      </li>
+      <li>
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={(e) => {
+            e.preventDefault();
+            setActiveSection("publications");
+            handleCloseMenu();
+            handleScrollTo("publications");
+          }}
+          href="#publications"
+          className={`text-white text-xl md:text-2xl ${
+            activeSection === "publications" ? "isActive" : ""
+          }`}
+        >
+          Publications
         </motion.a>
       </li>
       <li>
