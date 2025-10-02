@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FaUserAlt } from "react-icons/fa";
-import { FaEnvelope, FaGlobe, FaGulp, FaPhone } from "react-icons/fa6";
+import { FaLinkedin, FaUserAlt } from "react-icons/fa";
+import { FaEnvelope, FaGlobe, FaPhone } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import fadeIn from "../utilis/animationVariants";
 
@@ -19,7 +19,7 @@ function Contact() {
       return;
     }
 
-    setModle(true); // this will open your modal
+    setModle(true);
   };
   const closeModle = () => {
     setModle(false);
@@ -34,51 +34,46 @@ function Contact() {
       id="contact"
       className="bg-herobg flex items-center justify-center py-28 px-8"
     >
-      <div className="container mx-auto">
-        <div className="md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:gap-12 gap-8">
+      <div className="container mx-auto px">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
           {/**left side */}
           <motion.div
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="space-y-8"
+            viewport={{ once: false, amount: 0.4 }}
+            className="space-y-8 "
           >
             <h2 className="text-4xl font-bold font-secondary mb-4 text-white">
-              Make and Appointment
+              Get In Touch
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
-              <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center rounded-full p-3 bg-[#fffff1a]">
-                  <FaUserAlt className="text-primary" />
-                </div>
-                <div className="space-y-1 ">
-                  <h3 className="text-lg font-medium">24 Hours Services</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center rounded-full p-3 bg-[#fffff1a]">
-                  <FaEnvelope className="text-primary" />
-                </div>
-                <div className="space-y-1 ">
-                  <h3 className="text-lg font-medium">24 Hours Services</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
-                  </p>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-white">
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full p-3 bg-[#fffff1a]">
                   <FaPhone className="text-primary" />
                 </div>
                 <div className="space-y-1 ">
-                  <h3 className="text-lg font-medium">24 Hours Services</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
-                  </p>
+                  <h3 className="text-lg font-medium">Phone</h3>
+                  <p>+49 162 3320059</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex items-center justify-center rounded-full p-3 bg-[#fffff1a]">
+                  <FaEnvelope className="text-primary" />
+                </div>
+                <div className="space-y-1 ">
+                  <h3 className="text-lg font-medium">Email</h3>
+                  <p>contact@eslamaly.com</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex items-center justify-center rounded-full p-3 bg-[#fffff1a]">
+                  <FaLinkedin className="text-primary" />
+                </div>
+                <div className="space-y-1 ">
+                  <h3 className="text-lg font-medium">LinkedIn</h3>
+                  <p>eslam-aly-88b66ab8</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -86,10 +81,8 @@ function Contact() {
                   <FaGlobe className="text-primary" />
                 </div>
                 <div className="space-y-1 ">
-                  <h3 className="text-lg font-medium">24 Hours Services</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
-                  </p>
+                  <h3 className="text-lg font-medium">Website</h3>
+                  <p>www.eslamaly.com</p>
                 </div>
               </div>
             </div>
@@ -99,11 +92,11 @@ function Contact() {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="space-y-8 p-8 bg-white shadow-xl rounded-md"
+            viewport={{ once: false, amount: 0.4 }}
+            className="space-y-8 p-8 bg-white shadow-xl rounded-md mx-auto"
           >
-            <h3 className="text-2xl font-bold mb-4">Book an Appointment</h3>
-            <form action="" onSubmit={handleSubmit} className="space-y-8">
+            <h3 className="text-2xl font-bold mb-6">Contact Me</h3>
+            <form action="" onSubmit={handleSubmit} className="space-y-12">
               <div className="flex flex-col md:flex-row">
                 <input
                   value={name}

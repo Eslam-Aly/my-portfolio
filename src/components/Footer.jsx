@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import fadeIn from "../utilis/animationVariants";
 import {
-  FaFacebookF,
   FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
-  FaTwitter,
+  FaGlobe,
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
@@ -17,43 +16,18 @@ function Footer() {
         variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="container mx-auto grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8"
+        viewport={{ once: false, amount: 0.4 }}
+        className="container mx-auto grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-12"
       >
-        <div className="space-y-6 ">
+        <div className="space-y-2 w-3/4">
           <div className="flex items-center space-x-2">
             <h3 className="text-xl font-semibold">Eslam Aly</h3>
           </div>
           <p className="text-paragraph">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
-            saepe.
+            Motivated and results-oriented software engineer with a solid
+            academic background and hands-on experience in DevOps, cloud
+            infrastructure, and full-stack development.
           </p>
-          <div className="flex space-x-4">
-            <a
-              href="#"
-              className="bg-gray-200 text-primary rounded-full size-10 flex items-center justify-center hover:bg-primary hover:text-white"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="#"
-              className="bg-gray-200 text-primary rounded-full size-10 flex items-center justify-center hover:bg-primary hover:text-white"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="#"
-              className="bg-gray-200 text-primary rounded-full size-10 flex items-center justify-center hover:bg-primary hover:text-white"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="#"
-              className="bg-gray-200 text-primary rounded-full size-10 flex items-center justify-center hover:bg-primary hover:text-white"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
         </div>
 
         <div className="space-y-6">
@@ -83,29 +57,36 @@ function Footer() {
         </div>
 
         <div className="space-y-6">
-          <h3 className="text-xl font-semibold mb-4">Support</h3>
-          <ul className="space-y-3">
-            <li>
-              <a href="#home" className="hover:underline text-gray-700 ">
-                FAQs
+          <h3 className="text-xl font-semibold mb-4">Social</h3>
+          <div className="flex flex-col space-y-4">
+            <div className="flex flex-row gap-4 items-center">
+              <a
+                href="https://www.linkedin.com/in/eslam-aly-88b66ab8/"
+                className="bg-gray-200 text-primary rounded-full size-10 flex items-center justify-center hover:bg-primary hover:text-white"
+              >
+                <FaLinkedin />
               </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:underline text-gray-700 ">
-                Terms of Services
+              LinkedIn
+            </div>
+            <div className="flex flex-row gap-4 items-center">
+              <a
+                href="https://github.com/Eslam-Aly"
+                className="bg-gray-200 text-primary rounded-full size-10 flex items-center justify-center hover:bg-primary hover:text-white"
+              >
+                <FaGithub />
               </a>
-            </li>
-            <li>
-              <a href="#projects" className="hover:underline text-gray-700 ">
-                Privacy Policy
+              GitHub
+            </div>
+            <div className="flex flex-row gap-4 items-center">
+              <a
+                href="https://www.eslamaly.com"
+                className="bg-gray-200 text-primary rounded-full size-10 flex items-center justify-center hover:bg-primary hover:text-white"
+              >
+                <FaGlobe />
               </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:underline text-gray-700 ">
-                Suppor Center
-              </a>
-            </li>
-          </ul>
+              prtoflio
+            </div>
+          </div>
         </div>
 
         <div className="space-y-6">

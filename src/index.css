@@ -12,12 +12,17 @@
 
   --background-image-about: url("./assets/about.jpeg");
 }
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    font-size: 16px; /* stable rem base */
+    -webkit-text-size-adjust: 100%; /* Safari/iOS */
+    text-size-adjust: 100%; /* Chrome/Android */
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
 }
 
 .isActive {

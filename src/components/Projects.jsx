@@ -11,15 +11,16 @@ import rubiksCube1 from "../assets/rubiksCube.webm";
 import rubiksCube2 from "../assets/rubiksCube2.mp4";
 
 function Projects() {
+  const MotionTabList = motion(TabList);
   return (
     <section id="projects" className="  bg-[#f7f8fc]  ">
-      <div className="pt-18 md:pt-30 px-4 mx-auto">
+      <div className="container pt-18 md:pt-30 px-4 mx-auto">
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }}
-          className="text-center space-y-5"
+          viewport={{ once: false, amount: 0.4 }}
+          className="text-center space-y-"
         >
           <h1 className="text-4xl font-bold font-secondary text-herobg ">
             Featured Projects
@@ -29,30 +30,39 @@ function Projects() {
             engineering, AI, and problem-solving.
           </p>
         </motion.div>
-        {/** service category */}
-        <div className="w-4/5 py-12 mx-auto">
+
+        <div className=" py-12 mx-auto">
           <Tabs>
-            <motion.TabList
+            <MotionTabList
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.5 }}
-              className="flex flex-wrap justify-between items-center gap-8 md:gap-12"
+              viewport={{ once: false, amount: 0.4 }}
+              className="flex flex-row flex-nowrap overflow-x-auto justify-between items-center lg:gap-12 lg:text-lg font-medium gap-1 cursor-pointer"
             >
-              <Tab>Fake Face Detection</Tab>
-              <Tab> StoX</Tab>
-              <Tab>N Queens Problem</Tab>
-              <Tab>Rubik’s Cube Solver</Tab>
-            </motion.TabList>
+              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
+                Fake Face Detection
+              </Tab>
+              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
+                {" "}
+                StoX
+              </Tab>
+              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
+                N Queens Problem
+              </Tab>
+              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
+                Rubik’s Cube Solver
+              </Tab>
+            </MotionTabList>
 
             <TabPanel>
-              <div className="flex flex-col md:flex-row gap-8 mt-8 items-stretch">
+              <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
                 <motion.div
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 bg-white rounded-lg p-12 font-secondary flex flex-col"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 bg-white rounded-lg p-12 font-secondary flex flex-col"
                 >
                   <h3 className="text-3xl font-semibold text-primary ">
                     Fake face Detection
@@ -89,10 +99,10 @@ function Projects() {
                     </li>
                   </ul>
                   <p>
-                    <span className="text-xl font-medium">Tech Stack:</span>
+                    <span className="text-xl font-medium">Tech Stack: </span>
                     Python, TensorFlow, Keras, Streamlit, Google Colab.
                   </p>
-                  <div className="flex gap-2 mt-4 items-center">
+                  <div className="flex flex-row gap-1 mt-4 items-center ">
                     <p className="text-xl font-medium">Links:</p>
                     <a href="https://github.com/Eslam-Aly/fake-face-detection.git">
                       GitHub |
@@ -105,11 +115,11 @@ function Projects() {
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 flex"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 flex object-cover bg-black rounded-lg"
                 >
                   <video
-                    className="w-full h-auto rounded-2xl object-cover"
+                    className="w-full h-auto rounded-2xl "
                     autoPlay
                     muted
                     loop
@@ -123,13 +133,13 @@ function Projects() {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="flex flex-col md:flex-row gap-8 mt-8 items-stretch">
+              <div className="flex flex-col lg:flex-row gap-8 mt-8 items-stretch">
                 <motion.div
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 bg-white rounded-lg p-12 font-secondary"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 bg-white rounded-lg p-12 font-secondary"
                 >
                   <h3 className="text-3xl font-semibold text-primary mb-4">
                     StoX
@@ -160,7 +170,7 @@ function Projects() {
                     </li>
                   </ul>
                   <p>
-                    <span className="text-xl font-medium">Tech Stack:</span>
+                    <span className="text-xl font-medium">Tech Stack: </span>
                     Flutter, Dart, Firebase, React, Tailwind CSS, REST APIs.
                   </p>
                   <div className="flex gap-2 mt-4 items-center">
@@ -174,11 +184,11 @@ function Projects() {
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 flex"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 flex object-cover bg-black rounded-lg"
                 >
                   <video
-                    className="w-full h-auto rounded-2xl object-cover"
+                    className="w-full h-auto"
                     autoPlay
                     muted
                     loop
@@ -192,13 +202,13 @@ function Projects() {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="flex flex-col md:flex-row gap-8 mt-8">
+              <div className="flex flex-col lg:flex-row gap-8 mt-8">
                 <motion.div
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 bg-white rounded-lg p-12 font-secondary items-stretch"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 bg-white rounded-lg p-12 font-secondary items-stretch"
                 >
                   <h3 className="text-3xl font-semibold text-primary mb-4">
                     N Queen Problem
@@ -232,10 +242,10 @@ function Projects() {
                     <li>Produced an academic-style paper analyzing results.</li>
                   </ul>
                   <p>
-                    <span className="text-xl font-medium">Tech Stack:</span>
+                    <span className="text-xl font-medium">Tech Stack: </span>
                     Python, NumPy, Matplotlib, Overleaf (LaTeX).
                   </p>
-                  <div className="flex gap-2 mt-4 items-center">
+                  <div className="flex gap-1 mt-4 items-center">
                     <p className="text-xl font-medium">Links:</p>
                     <a href="">GitHub |</a>
                     <a href="">Live Demo |</a>
@@ -246,11 +256,11 @@ function Projects() {
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 flex"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 flex object-cover bg-black rounded-lg"
                 >
                   <video
-                    className="w-full h-auto rounded-2xl object-cover"
+                    className="w-full h-auto rounded-2xl "
                     autoPlay
                     muted
                     loop
@@ -264,13 +274,13 @@ function Projects() {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="flex flex-col md:flex-row gap-8 mt-8 items-stretch">
+              <div className="flex flex-col lg:flex-row gap-8 mt-8 items-stretch">
                 <motion.div
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 bg-white rounded-lg p-12 font-secondary"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 bg-white rounded-lg p-12 font-secondary"
                 >
                   <h3 className="text-3xl font-semibold text-primary mb-4">
                     Rubik's Cube Solver
@@ -306,10 +316,10 @@ function Projects() {
                     </li>
                   </ul>
                   <p>
-                    <span className="text-xl font-medium">Tech Stack:</span>
+                    <span className="text-xl font-medium">Tech Stack: </span>
                     Python, NumPy, Matplotlib, Overleaf (LaTeX).
                   </p>
-                  <div className="flex gap-2 mt-4 items-center">
+                  <div className="flex gap-1 mt-4 items-center">
                     <p className="text-xl font-medium">Links:</p>
                     <a href="">GitHub |</a>
                     <a href="">Live Demo |</a>
@@ -320,11 +330,11 @@ function Projects() {
                   variants={fadeIn("up", 0.2)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="md:w-1/2 flex"
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 flex object-cover bg-black rounded-lg"
                 >
                   <video
-                    className="w-full h-auto rounded-2xl object-cover"
+                    className="w-full h-auto rounded-2xl "
                     autoPlay
                     muted
                     loop
