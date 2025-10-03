@@ -31,15 +31,13 @@ function Hero() {
           <h1 className="text-3xl  font-secondary font-bold leading-snug">
             Eslam Aly
           </h1>
-          <h2 className="text-2xl font-light mb-4">Software Engineer</h2>
+          <h2 className="text-2xl font-light mb-4">Full-Stack Engineer</h2>
           <p className="text-sm md:text-base mb-12 ">
-            Motivated and results-oriented software engineer with a solid
-            academic background and hands-on experience in DevOps, cloud
-            infrastructure, and full-stack development. Skilled in designing and
-            deploying scalable applications, automating workflows, and
-            integrating machine learning models into production environments.
-            Proficient in Docker, Kubernetes, CI/CD pipelines, Git, and cloud
-            platforms such as AWS.
+            Passionate and results-driven full-stack engineer with a strong
+            academic background and hands-on experience in building scalable web
+            and cloud applications. Skilled in modern front-end and back-end
+            development, database design, and API integration, with additional
+            strengths in DevOps and AI that bring end-to-end value to projects.
           </p>
           <button
             onClick={handleScroll}

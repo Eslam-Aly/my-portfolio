@@ -1,34 +1,68 @@
 import { useState } from "react";
-import { FaLinkedin, FaUserAlt } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope, FaGlobe, FaPhone } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import fadeIn from "../utilis/animationVariants";
 
 function Contact() {
+  // State
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [tel, setTel] = useState("");
-  const [country, setCountry] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [modle, setModle] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const handleSubmit = (e) => {
+  // Submit handler
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!name || !email || !tel || !country || !message) {
+    if (!name || !email || !message) {
       return;
     }
 
-    setModle(true);
+    const access_key = "1f977a1d-b447-4670-9e78-c952d43c98f9";
+
+    const payload = {
+      access_key,
+      name,
+      email,
+      subject: subject || "(No subject)",
+      message,
+      from_name: "Portfolio Contact Form",
+      page: window.location.href,
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setShowModal(true);
+      } else {
+        alert("Sorry, something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      alert("Network error. Please try again.");
+    }
   };
-  const closeModle = () => {
-    setModle(false);
+
+  // Close modal
+  const closeModal = () => {
+    setShowModal(false);
     setName("");
     setEmail("");
-    setTel("");
-    setCountry("");
+    setSubject("");
     setMessage("");
   };
+
   return (
     <section
       id="contact"
@@ -64,7 +98,7 @@ function Contact() {
                 </div>
                 <div className="space-y-1 ">
                   <h3 className="text-lg font-medium">Email</h3>
-                  <p>contact@eslamaly.com</p>
+                  <p>eslam.aly@eslamaly.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -81,7 +115,7 @@ function Contact() {
                   <FaGlobe className="text-primary" />
                 </div>
                 <div className="space-y-1 ">
-                  <h3 className="text-lg font-medium">Website</h3>
+                  <h3 className="text-lg font-medium">Portfolio</h3>
                   <p>www.eslamaly.com</p>
                 </div>
               </div>
@@ -96,6 +130,7 @@ function Contact() {
             className="space-y-8 p-8 bg-white shadow-xl rounded-md mx-auto"
           >
             <h3 className="text-2xl font-bold mb-6">Contact Me</h3>
+            <hr className="w-24 border text-primary border-primary" />
             <form action="" onSubmit={handleSubmit} className="space-y-12">
               <div className="flex flex-col md:flex-row">
                 <input
@@ -117,21 +152,10 @@ function Contact() {
               </div>
               <div className="flex flex-col md:flex-row">
                 <input
-                  value={tel}
-                  required
-                  onChange={(e) => setTel(e.target.value)}
-                  type="tel"
-                  placeholder="Phone Number"
-                  pattern="^[0-9]{10,15}$"
-                  title="Please enter a valid phone number (10–15 digits)."
-                  className="w-full p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-primary shadow"
-                />
-                <input
-                  value={country}
-                  required
-                  onChange={(e) => setCountry(e.target.value)}
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                   type="text"
-                  placeholder="Country"
+                  placeholder="Subject (Optional)"
                   className="w-full p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-primary shadow"
                 />
               </div>
@@ -149,26 +173,33 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full p-3 bg-primary text-white rounded-md hover:bg-primary/80"
+                className="w-full p-3 font-semibold bg-primary text-white rounded-md hover:bg-primary/80"
               >
-                Send Message
+                Let’s Connect
               </button>
             </form>
           </motion.div>
         </div>
-        {modle && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black/90">
+        {showModal && (
+          <motion.div
+            variants={fadeIn("down", 0.01)}
+            initial="hidden"
+            animate={"show"}
+            role="dialog"
+            aria-modal="true"
+            className="fixed inset-0 flex items-center justify-center bg-black/90"
+          >
             <div className="bg-white p-8 rounded-md shadow-lg">
               <h2 className="text-2xl font-bold mb-4 ">Thank you!</h2>
-              <p>Thank you {name}, for submiting your query</p>
+              <p>Thank you {name}, for submitting your message.</p>
               <button
-                onClick={closeModle}
+                onClick={closeModal}
                 className="mt-4 px-4 py-2 bg-primary text-white rounded-md"
               >
                 Close
               </button>
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </section>

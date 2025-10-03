@@ -21,7 +21,7 @@ function Footer() {
       >
         <div className="space-y-2 w-3/4">
           <div className="flex items-center space-x-2">
-            <h3 className="text-xl font-semibold">Eslam Aly</h3>
+            <h3 className="text-xl font-semibold">About</h3>
           </div>
           <p className="text-paragraph">
             Motivated and results-oriented software engineer with a solid
@@ -66,7 +66,12 @@ function Footer() {
               >
                 <FaLinkedin />
               </a>
-              LinkedIn
+              <a
+                href="https://www.linkedin.com/in/eslam-aly-88b66ab8/"
+                className="hover:underline text-gray-700 "
+              >
+                LinkedIn
+              </a>
             </div>
             <div className="flex flex-row gap-4 items-center">
               <a
@@ -75,7 +80,12 @@ function Footer() {
               >
                 <FaGithub />
               </a>
-              GitHub
+              <a
+                href="https://github.com/Eslam-Aly"
+                className="hover:underline text-gray-700 "
+              >
+                GitHub
+              </a>
             </div>
             <div className="flex flex-row gap-4 items-center">
               <a
@@ -84,7 +94,12 @@ function Footer() {
               >
                 <FaGlobe />
               </a>
-              prtoflio
+              <a
+                href="https://www.eslamaly.com"
+                className="hover:underline text-gray-700 "
+              >
+                Portfolio
+              </a>
             </div>
           </div>
         </div>

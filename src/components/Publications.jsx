@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
 import fadeIn from "../utilis/animationVariants.js";
+import { useState } from "react";
 
 function Publications() {
+  const [showModal, setShowModal] = useState(false);
+
+  const showMessage = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <section
       id="publications"
@@ -19,9 +30,9 @@ function Publications() {
             Research & Publications
           </h2>
           <p className="text-lg mb-12 md:w-2/3 mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sunt
-            possimus ipsum dolores ipsam, molestiae eveniet voluptatibus
-            similique tempora omnis?
+            This section highlights my published and ongoing research projects,
+            showcasing my work in AI, machine learning, and algorithmic
+            strategies.
           </p>
         </motion.div>
         <div className="flex flex-col gap-12 xl:flex-row mx-auto  ">
@@ -55,10 +66,16 @@ function Publications() {
               </ul>
 
               <div className="mt-auto grid gap-4 grid-cols-1 sm:grid-cols-2">
-                <button className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center">
+                <button
+                  onClick={showMessage}
+                  className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
+                >
                   View on Sciforum
                 </button>
-                <button className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center">
+                <button
+                  onClick={showMessage}
+                  className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
+                >
                   Cite (BibTeX)
                 </button>
               </div>
@@ -94,10 +111,16 @@ function Publications() {
               </ul>
 
               <div className="mt-auto grid gap-4 grid-cols-1 sm:grid-cols-2">
-                <button className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center">
+                <button
+                  onClick={showMessage}
+                  className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
+                >
                   View on Sciforum
                 </button>
-                <button className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center">
+                <button
+                  onClick={showMessage}
+                  className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
+                >
                   Cite (BibTeX)
                 </button>
               </div>
@@ -105,6 +128,27 @@ function Publications() {
           </motion.div>
         </div>
       </div>
+      {showModal && (
+        <motion.div
+          variants={fadeIn("down", 0.01)}
+          initial="hidden"
+          animate={"show"}
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 flex items-center justify-center bg-black/90"
+        >
+          <div className="bg-white p-8 rounded-md shadow-lg">
+            <h2 className="text-2xl font-bold mb-4 ">Thank you!</h2>
+            <p>The paper link is not provided yet by Sciforum.</p>
+            <button
+              onClick={closeModal}
+              className="mt-4 px-4 py-2 bg-primary text-white rounded-md"
+            >
+              Close
+            </button>
+          </div>
+        </motion.div>
+      )}
     </section>
   );
 }

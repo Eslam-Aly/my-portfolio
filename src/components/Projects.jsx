@@ -173,7 +173,7 @@ function Projects() {
                     <span className="text-xl font-medium">Tech Stack: </span>
                     Flutter, Dart, Firebase, React, Tailwind CSS, REST APIs.
                   </p>
-                  <div className="flex gap-2 mt-4 items-center">
+                  <div className="flex gap-1 mt-4 items-center">
                     <p className="text-xl font-medium">Links:</p>
                     <a href="">GitHub |</a>
                     <a href="">Live Demo |</a>

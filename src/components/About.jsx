@@ -16,14 +16,13 @@ function About() {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl font-secondary font-bold mb-4 leading-snug">
-              Software Engineer | AI & DevOps Enthusiast
+              Full-Stack Engineer | AI & DevOps Enthusiast
             </h2>
             <p className="text-lg">
-              I’m a motivated software engineer with a strong foundation in
-              software engineering, DevOps, and artificial intelligence. Skilled
-              in building scalable systems, automating workflows, and applying
-              AI to solve real-world problems, I combine hands-on project
-              experience with a passion for continuous learning.
+              Motivated full-stack engineer experienced in building scalable web
+              and cloud applications. Alongside development, I bring strengths
+              in DevOps (Docker, Kubernetes, CI/CD, AWS) and AI/ML (computer
+              vision, model deployment) to deliver complete solutions.
             </p>
           </div>
           <div className="flex flex-col mx-auto justify-between  lg:flex-row  pb-12 ">
@@ -33,19 +32,29 @@ function About() {
               </h3>
               <ul className="mb-8 space-y-1">
                 <li>
-                  B.Sc. Software Engineering, University of Europe for Applied
-                  Sciences (Germany)
+                  <span className="font-medium text-black">
+                    B.Sc. Software Engineering
+                  </span>{" "}
+                  – University of Europe for Applied Sciences (Germany)
                 </li>
                 <li>
-                  B.Sc. Software Engineering, Kyiv Ploticnic Institute (Ukrain)
+                  <span className="font-medium text-black">
+                    B.Sc. Software Engineering
+                  </span>{" "}
+                  – Kyiv Polytechnic Institute (Ukraine) – 3 semesters
                 </li>
               </ul>
               <h3 className="text-lg font-bold mb-2 font-secondary">
-                Work Experince:
+                Work Experience:
               </h3>
               <ul className="mb-8 space-y-1">
-                <li>Requirement Engineer | Cairo | 2020</li>
-                <li>IT Help Desk | Kyiv | 2021</li>
+                <li>
+                  <span className="font-medium text-black">
+                    Requirements Engineer
+                  </span>{" "}
+                  – Cairo, Feb 2020 – Dec 2020
+                </li>
+                <li>IT Help Desk – Kyiv, Feb 2021 – Feb 2022</li>
               </ul>
             </div>
             <div className="mb-4 lg:mb-0 lg:mr-8 bg-white p-6 rounded-lg shadow-md flex-1">
@@ -53,20 +62,49 @@ function About() {
                 Specializations:
               </h3>
               <ul className=" space-y-2">
-                <li>🚀 DevOps & Cloud: Docker, Kubernetes, CI/CD, AWS</li>
                 <li>
-                  🤖 AI & Machine Learning: Computer Vision, Deep Learning,
-                  Optimization
+                  <span className="font-medium text-black">
+                    Full-Stack Development:
+                  </span>{" "}
+                  React, Flutter, HTML5, CSS3, Tailwind CSS, Syncfusion, REST
+                  APIs, Firebase, SQL
                 </li>
-                <li>💻 Full-Stack Development: React, Flutter, Firebase</li>
-                <li>📊 Data & Analytics: Python, SQL, Tableau</li>
+                <li>
+                  <span className="font-medium text-black">
+                    Programming Languages:
+                  </span>{" "}
+                  Python, JavaScript, Dart, Bash
+                </li>
+                <li>
+                  <span className="font-medium text-black">
+                    DevOps & Cloud:
+                  </span>{" "}
+                  Docker, Kubernetes, OpenShift, GitHub Actions, CI/CD, AWS
+                </li>
+                <li>
+                  <span className="font-medium text-black">AI & Data:</span>{" "}
+                  TensorFlow, Keras, Jupyter
+                </li>
+                <li>
+                  <span className="font-medium text-black">
+                    Security & Code Quality:
+                  </span>{" "}
+                  Snyk, OWASP ZAP, SonarQube, TDD, BDD
+                </li>
+                <li>
+                  <span className="font-medium text-black">
+                    Collaboration & Tools:
+                  </span>{" "}
+                  Git, Jira, Confluence, Figma, Overleaf, VS Code, Microsoft
+                  365, Linux Terminal
+                </li>
               </ul>
             </div>
           </div>
           <button className="bg-primary text-white py-3.5 px-8 font-medium rounded-md hover:bg-primary/50 transition cursor-pointer">
             <a
-              href="/Eslam_Aly_CV_2025"
-              download="Eslam_Aly_CV_2025"
+              href="/Eslam_Aly_CV_2025.pdf"
+              download="Eslam_Aly_CV_2025.pdf"
               className="flex gap-1 items-center "
             >
               <span>Download CV</span>
