@@ -117,7 +117,7 @@ function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="  text-primary   size-6 flex items-center justify-center  " />
-              <p>contact@eslamaly.com</p>
+              <p>eslam.aly@eslamaly.com</p>
             </li>
           </ul>
         </div>
