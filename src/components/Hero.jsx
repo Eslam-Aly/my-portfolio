@@ -32,12 +32,10 @@ function Hero() {
             Eslam Aly
           </h1>
           <h2 className="text-2xl font-light mb-4">Full-Stack Engineer</h2>
-          <p className="text-sm md:text-base mb-12 ">
-            Passionate and results-driven full-stack engineer with a strong
-            academic background and hands-on experience in building scalable web
-            and cloud applications. Skilled in modern front-end and back-end
-            development, database design, and API integration, with additional
-            strengths in DevOps and AI that bring end-to-end value to projects.
+          <p className="text-sm md:text-lg mb-12 ">
+            Full-Stack Engineer specializing in React, TypeScript, Node.js,
+            MongoDB, and DevOps tools such as Docker, Kubernetes, and CI/CD
+            pipelines.
           </p>
           <button
             onClick={handleScroll}

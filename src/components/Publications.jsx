@@ -12,6 +12,16 @@ function Publications() {
   const closeModal = () => {
     setShowModal(false);
   };
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        alert("Citation copied to clipboard!");
+      },
+      (err) => {
+        alert("Failed to copy citation: ", err);
+      }
+    );
+  };
 
   return (
     <section
@@ -62,18 +72,35 @@ function Publications() {
                 <li>
                   👤 Authors: Eslam Aly, Umne Rabab Syed, Muhammad Maaz Hamid
                 </li>
-                <li>✅ Status: Accepted for Talk Presentation (2025-07-25)</li>
+                <li>✅ Status: Published (2025-12-03)</li>
               </ul>
 
               <div className="mt-auto grid gap-4 grid-cols-1 sm:grid-cols-2">
                 <button
-                  onClick={showMessage}
+                  onClick={() =>
+                    window.open(
+                      "https://sciforum.net/paper/view/27925",
+                      "_blank"
+                    )
+                  }
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
                 >
                   View on Sciforum
                 </button>
                 <button
-                  onClick={showMessage}
+                  onClick={() =>
+                    copyToClipboard(
+                      `@inproceedings{aly2025deepfake,
+                        author    = {Aly, Eslam M. and Syed, Umne Rabab and Hamid, Muhammad Maaz},
+                        title     = {Toward Reliable Deepfake Detection: A CNN-Based Study on Synthetic Faces},
+                        booktitle = {Proceedings of the 6th International Electronic Conference on Applied Sciences},
+                        year      = {2025},
+                        organization = {MDPI},
+                        address   = {Basel, Switzerland},
+                        doi       = {}
+                      }`
+                    )
+                  }
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
                 >
                   Cite (BibTeX)
@@ -89,8 +116,9 @@ function Publications() {
           >
             <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between">
               <h3 className="text-xl font-semibold mb-4">
-                Robustness and Trade-offs in Algorithmic Strategies for
-                Combinatorial Optimization
+                A Comparative Evaluation of Search and Metaheuristic Algorithms
+                for the N-Queens Problem: Scalability, Efficiency, and Success
+                Rates
               </h3>
               <hr className="w-24 border text-primary border-primary" />
 
@@ -100,14 +128,12 @@ function Publications() {
                 robustness and trade-offs.
               </p>
               <ul className="list-disc list-inside space-y-3 mb-6">
+                <li>📍 IEEE INMIC Conference</li>
                 <li>
-                  📍 The 6th International Electronic Conference on Applied
-                  Sciences – Section: Computing and AI
+                  👤 Authors: Eslam Aly, Muhammad Maaz Hamid, Muhammad Imad,
+                  Raja Hashim Ali
                 </li>
-                <li>
-                  👤 Authors: Eslam Aly, Raja Hashmi Ali, Muhammad Maaz Hamid
-                </li>
-                <li>🟡 Status: Under MDPI Check (submitted 2025-07-26)</li>
+                <li>✅ Status: Accepted (2025-11-14)</li>
               </ul>
 
               <div className="mt-auto grid gap-4 grid-cols-1 sm:grid-cols-2">
@@ -115,7 +141,7 @@ function Publications() {
                   onClick={showMessage}
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
                 >
-                  View on Sciforum
+                  View on IEEE INMIC
                 </button>
                 <button
                   onClick={showMessage}
@@ -139,7 +165,7 @@ function Publications() {
         >
           <div className="bg-white p-8 rounded-md shadow-lg">
             <h2 className="text-2xl font-bold mb-4 ">Thank you!</h2>
-            <p>The paper link is not provided yet by Sciforum.</p>
+            <p>The paper link is not provided yet by IEEE INMIC.</p>
             <button
               onClick={closeModal}
               className="mt-4 px-4 py-2 bg-primary text-white rounded-md"

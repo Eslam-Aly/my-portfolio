@@ -49,12 +49,15 @@ function About() {
               </h3>
               <ul className="mb-8 space-y-1">
                 <li>
+                  <span className="font-medium text-black">IT Help Desk</span> –
+                  Kyiv, Feb 2021 – Feb 2022
+                </li>
+                <li>
                   <span className="font-medium text-black">
                     Requirements Engineer
                   </span>{" "}
                   – Cairo, Feb 2020 – Dec 2020
                 </li>
-                <li>IT Help Desk – Kyiv, Feb 2021 – Feb 2022</li>
               </ul>
             </div>
             <div className="mb-4 lg:mb-0 lg:mr-8 bg-white p-6 rounded-lg shadow-md flex-1">
@@ -66,25 +69,23 @@ function About() {
                   <span className="font-medium text-black">
                     Full-Stack Development:
                   </span>{" "}
-                  React, Flutter, HTML5, CSS3, Tailwind CSS, Syncfusion, REST
-                  APIs, Firebase, SQL
+                  React, TypeScript, JavaScript, HTML5, CSS/SCSS, Node.js,
+                  Firebase, REST APIs, Tailwind CSS, MongoDB, PostgreSQL
                 </li>
                 <li>
                   <span className="font-medium text-black">
                     Programming Languages:
                   </span>{" "}
-                  Python, JavaScript, Dart, Bash
+                  JavaScript, TypeScript, Dart, Python, SQL
                 </li>
                 <li>
                   <span className="font-medium text-black">
                     DevOps & Cloud:
                   </span>{" "}
-                  Docker, Kubernetes, OpenShift, GitHub Actions, CI/CD, AWS
+                  Git, Docker, Kubernetes, GitHub Actions, CI/CD, Linux
+                  (Ubuntu), Linux Shell (Bash), AWS
                 </li>
-                <li>
-                  <span className="font-medium text-black">AI & Data:</span>{" "}
-                  TensorFlow, Keras, Jupyter
-                </li>
+
                 <li>
                   <span className="font-medium text-black">
                     Security & Code Quality:
@@ -95,8 +96,7 @@ function About() {
                   <span className="font-medium text-black">
                     Collaboration & Tools:
                   </span>{" "}
-                  Git, Jira, Confluence, Figma, Overleaf, VS Code, Microsoft
-                  365, Linux Terminal
+                  Git, Jira, Confluence, Figma, Overleaf, VS Code, Microsoft 365
                 </li>
               </ul>
             </div>

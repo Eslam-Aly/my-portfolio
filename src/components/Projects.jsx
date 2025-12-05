@@ -9,6 +9,8 @@ import NQueenWebM from "../assets/N-QueenDemo1.webm";
 import NQueenMp4 from "../assets/N-QueenDemo2.mp4";
 import rubiksCube1 from "../assets/rubiksCube.webm";
 import rubiksCube2 from "../assets/rubiksCube2.mp4";
+import AqardotDemoMp4 from "../assets/AqardotDemoMp4.mp4";
+import AqardotDemoWebm from "../assets/AqardotDemoWebm.webm";
 
 function Projects() {
   const MotionTabList = motion(TabList);
@@ -41,20 +43,191 @@ function Projects() {
               className="flex flex-row flex-nowrap overflow-x-auto justify-between items-center lg:gap-12 lg:text-lg font-medium gap-1 cursor-pointer"
             >
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
-                Fake Face Detection
+                AqarDot
               </Tab>
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
                 {" "}
                 StoX
               </Tab>
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
-                N Queens Problem
+                Fake Face Detection
+              </Tab>
+              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
+                N Queens Solver
               </Tab>
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
                 Rubik’s Cube Solver
               </Tab>
             </MotionTabList>
 
+            <TabPanel>
+              <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 bg-white rounded-lg p-12 font-secondary flex flex-col"
+                >
+                  <h3 className="text-3xl font-semibold text-primary ">
+                    AqarDot
+                  </h3>
+                  <p className="mb-4">
+                    AqarDot is a full-stack real estate platform that allows
+                    users to browse, search, filter, and list properties for
+                    rent or sale across Egypt.
+                  </p>
+                  <h4 className="text-xl font-medium">Description:</h4>
+                  <p className="mb-8">
+                    AqarDot is designed to make property discovery simple and
+                    efficient. Users can search by governorate, city, area,
+                    price, property type, and more—supported by a dynamic,
+                    hierarchical location structure tailored for Egypt.
+                  </p>
+                  <h4 className="text-xl font-medium text-black mb-4">
+                    Features:
+                  </h4>
+                  <ul className="list-disc list-inside space-y-3 mb-4">
+                    <li>
+                      Full-stack architecture using React, Node.js, MongoDB, and
+                      Firebase
+                    </li>
+                    <li>
+                      Dynamic location system with governorates → cities → areas
+                    </li>
+                    <li>
+                      Advanced search with filters (price, property size, type,
+                      amenities, etc.)
+                    </li>
+                    <li>
+                      User authentication with Firebase (signup, login,
+                      protected routes)
+                    </li>
+                  </ul>
+                  <p>
+                    <span className="text-xl font-medium">Tech Stack: </span>
+                    React, Node.js, Express.js, MongoDB, Firebase.
+                  </p>
+                  <div className="flex flex-row gap-1 mt-4 items-center ">
+                    <p className="text-xl font-medium">Links:</p>
+                    <a
+                      href="https://github.com/Eslam-Aly/aqardot-client.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Client Repo |
+                    </a>
+                    <a
+                      href="https://github.com/Eslam-Aly/aqardot-api.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      API Repo |
+                    </a>
+                    <a
+                      href="https://www.aqardot.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </motion.div>
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 flex object-cover bg-black rounded-lg"
+                >
+                  <video
+                    className="w-full h-auto rounded-2xl "
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src={AqardotDemoWebm} type="video/webm" />
+                    <source src={AqardotDemoMp4} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </motion.div>
+              </div>
+            </TabPanel>
+
+            <TabPanel>
+              <div className="flex flex-col lg:flex-row gap-8 mt-8 items-stretch">
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 bg-white rounded-lg p-12 font-secondary"
+                >
+                  <h3 className="text-3xl font-semibold text-primary mb-4">
+                    StoX
+                  </h3>
+                  <p className="mb-4">
+                    A cross-platform stock market and portfolio tracking app.
+                  </p>
+                  <h4 className="text-xl font-medium">Description:</h4>
+                  <p className="mb-8">
+                    StoX is a Flutter-based app designed to make stock and
+                    crypto tracking simple for both beginners and advanced
+                    users. It integrates multiple APIs and offers real-time
+                    financial data visualization.
+                  </p>
+                  <h4 className="text-xl font-medium text-black mb-4">
+                    Features:
+                  </h4>
+                  <ul className="list-disc list-inside space-y-3 mb-4">
+                    <li>
+                      Real-time prices for stocks, ETFs, and cryptocurrencies.
+                    </li>
+                    <li>
+                      Personalized portfolio tracking with gain/loss analysis.
+                    </li>
+                    <li>Multi-country currency conversion support.</li>
+                    <li>
+                      Responsive mobile & web design with Firebase backend.
+                    </li>
+                  </ul>
+                  <p>
+                    <span className="text-xl font-medium">Tech Stack: </span>
+                    Flutter, Dart, Firebase, React, Tailwind CSS, REST APIs.
+                  </p>
+                  <div className="flex gap-1 mt-4 items-center">
+                    <p className="text-xl font-medium">Links:</p>
+                    <a
+                      href="https://github.com/Eslam-Aly/StoX.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </motion.div>
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="lg:w-1/2 flex object-cover bg-black rounded-lg"
+                >
+                  <video
+                    className="w-full h-auto"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src={stoxDemoWebm} type="video/webm" />
+                    <source src={stoxDemoMp4} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </motion.div>
+              </div>
+            </TabPanel>
             <TabPanel>
               <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
                 <motion.div
@@ -104,11 +277,20 @@ function Projects() {
                   </p>
                   <div className="flex flex-row gap-1 mt-4 items-center ">
                     <p className="text-xl font-medium">Links:</p>
-                    <a href="https://github.com/Eslam-Aly/fake-face-detection.git">
+                    <a
+                      href="https://github.com/Eslam-Aly/fake-face-detection.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       GitHub |
                     </a>
-                    <a href="">Live Demo |</a>
-                    <a href="">Report</a>
+                    <a
+                      href="https://huggingface.co/spaces/eslamaly/fake-face-detector"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo
+                    </a>
                   </div>
                 </motion.div>
                 <motion.div
@@ -133,75 +315,6 @@ function Projects() {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="flex flex-col lg:flex-row gap-8 mt-8 items-stretch">
-                <motion.div
-                  variants={fadeIn("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.4 }}
-                  className="lg:w-1/2 bg-white rounded-lg p-12 font-secondary"
-                >
-                  <h3 className="text-3xl font-semibold text-primary mb-4">
-                    StoX
-                  </h3>
-                  <p className="mb-4">
-                    A cross-platform stock market and portfolio tracking app.
-                  </p>
-                  <h4 className="text-xl font-medium">Description:</h4>
-                  <p className="mb-8">
-                    StoX is a Flutter-based app designed to make stock and
-                    crypto tracking simple for both beginners and advanced
-                    users. It integrates multiple APIs and offers real-time
-                    financial data visualization.
-                  </p>
-                  <h4 className="text-xl font-medium text-black mb-4">
-                    Features:
-                  </h4>
-                  <ul className="list-disc list-inside space-y-3 mb-4">
-                    <li>
-                      Real-time prices for stocks, ETFs, and cryptocurrencies.
-                    </li>
-                    <li>
-                      Personalized portfolio tracking with gain/loss analysis.
-                    </li>
-                    <li>Multi-country currency conversion support.</li>
-                    <li>
-                      Responsive mobile & web design with Firebase backend.
-                    </li>
-                  </ul>
-                  <p>
-                    <span className="text-xl font-medium">Tech Stack: </span>
-                    Flutter, Dart, Firebase, React, Tailwind CSS, REST APIs.
-                  </p>
-                  <div className="flex gap-1 mt-4 items-center">
-                    <p className="text-xl font-medium">Links:</p>
-                    <a href="">GitHub |</a>
-                    <a href="">Live Demo |</a>
-                    <a href="">Report</a>
-                  </div>
-                </motion.div>
-                <motion.div
-                  variants={fadeIn("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.4 }}
-                  className="lg:w-1/2 flex object-cover bg-black rounded-lg"
-                >
-                  <video
-                    className="w-full h-auto"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  >
-                    <source src={stoxDemoWebm} type="video/webm" />
-                    <source src={stoxDemoMp4} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </motion.div>
-              </div>
-            </TabPanel>
-            <TabPanel>
               <div className="flex flex-col lg:flex-row gap-8 mt-8">
                 <motion.div
                   variants={fadeIn("up", 0.2)}
@@ -211,7 +324,7 @@ function Projects() {
                   className="lg:w-1/2 bg-white rounded-lg p-12 font-secondary items-stretch"
                 >
                   <h3 className="text-3xl font-semibold text-primary mb-4">
-                    N Queen Problem
+                    N Queen Solver
                   </h3>
                   <p className="mb-4">
                     Comparing search and optimization algorithms for N-Queens.
@@ -247,9 +360,13 @@ function Projects() {
                   </p>
                   <div className="flex gap-1 mt-4 items-center">
                     <p className="text-xl font-medium">Links:</p>
-                    <a href="">GitHub |</a>
-                    <a href="">Live Demo |</a>
-                    <a href="">Report</a>
+                    <a
+                      href="https://github.com/Eslam-Aly/N-Queen-Solver.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
                   </div>
                 </motion.div>
                 <motion.div
@@ -321,9 +438,13 @@ function Projects() {
                   </p>
                   <div className="flex gap-1 mt-4 items-center">
                     <p className="text-xl font-medium">Links:</p>
-                    <a href="">GitHub |</a>
-                    <a href="">Live Demo |</a>
-                    <a href="">Report</a>
+                    <a
+                      href="https://github.com/Eslam-Aly/rubik-cube-solver.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
                   </div>
                 </motion.div>
                 <motion.div

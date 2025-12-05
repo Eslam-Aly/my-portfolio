@@ -68,6 +68,8 @@ function Footer() {
               </a>
               <a
                 href="https://www.linkedin.com/in/eslam-aly-88b66ab8/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:underline text-gray-700 "
               >
                 LinkedIn
@@ -82,6 +84,8 @@ function Footer() {
               </a>
               <a
                 href="https://github.com/Eslam-Aly"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:underline text-gray-700 "
               >
                 GitHub
@@ -96,6 +100,8 @@ function Footer() {
               </a>
               <a
                 href="https://www.eslamaly.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:underline text-gray-700 "
               >
                 Portfolio
