@@ -9,8 +9,8 @@ import NQueenWebM from "../assets/N-QueenDemo1.webm";
 import NQueenMp4 from "../assets/N-QueenDemo2.mp4";
 import rubiksCube1 from "../assets/rubiksCube.webm";
 import rubiksCube2 from "../assets/rubiksCube2.mp4";
-import AqardotDemoMp4 from "../assets/AqardotDemoMp4.mp4";
-import AqardotDemoWebm from "../assets/AqardotDemoWebm.webm";
+import AqardotDemoMp4 from "../assets/aqardotDemoMp4.mp4";
+import AqardotDemoWebm from "../assets/aqardotDemoWebm.webm";
 
 function Projects() {
   const MotionTabList = motion(TabList);
