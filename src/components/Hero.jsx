@@ -15,9 +15,9 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="bg-herobg text-white ">
+    <section id="home" className="bg-herobg text-white pt-24">
       <div
-        className="container flex flex-col md:flex-row items-center mx-auto justify-between py-4 gap-4  
+        className="container flex flex-col md:flex-row items-center mx-auto justify-between md:pt-6 gap-6  
       overflow-hidden"
       >
         {/*left side*/}
@@ -58,7 +58,7 @@ function Hero() {
           <img
             src={hero1}
             alt="hero image"
-            className="h-screen md:h-1/2 object-cover"
+            className="h-auto md:h-1/2 max-w-[360px] md:max-w-[480px] md:pl-8 object-cover md:pt-24"
           />
         </motion.div>
       </div>
