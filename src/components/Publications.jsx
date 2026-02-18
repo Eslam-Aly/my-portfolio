@@ -19,7 +19,7 @@ function Publications() {
       },
       (err) => {
         alert("Failed to copy citation: ", err);
-      }
+      },
     );
   };
 
@@ -72,7 +72,7 @@ function Publications() {
                 <li>
                   👤 Authors: Eslam Aly, Umne Rabab Syed, Muhammad Maaz Hamid
                 </li>
-                <li>✅ Status: Published (2025-12-03)</li>
+                <li>✅ Status: Published (December 2025)</li>
               </ul>
 
               <div className="mt-auto grid gap-4 grid-cols-1 sm:grid-cols-2">
@@ -80,7 +80,7 @@ function Publications() {
                   onClick={() =>
                     window.open(
                       "https://sciforum.net/paper/view/27925",
-                      "_blank"
+                      "_blank",
                     )
                   }
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
@@ -98,7 +98,7 @@ function Publications() {
                         organization = {MDPI},
                         address   = {Basel, Switzerland},
                         doi       = {}
-                      }`
+                      }`,
                     )
                   }
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
@@ -133,18 +133,37 @@ function Publications() {
                   👤 Authors: Eslam Aly, Muhammad Maaz Hamid, Muhammad Imad,
                   Raja Hashim Ali
                 </li>
-                <li>✅ Status: Accepted (2025-11-14)</li>
+                <li>✅ Status: Published (December 2025)</li>
               </ul>
 
               <div className="mt-auto grid gap-4 grid-cols-1 sm:grid-cols-2">
                 <button
-                  onClick={showMessage}
+                  onClick={() =>
+                    window.open(
+                      "https://ieeexplore.ieee.org/abstract/document/11348196",
+                      "_blank",
+                    )
+                  }
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
                 >
                   View on IEEE INMIC
                 </button>
                 <button
-                  onClick={showMessage}
+                  onClick={() =>
+                    copyToClipboard(
+                      `@INPROCEEDINGS{11348196,
+                        author={Aly, Eslam Mahmoud Mohamed Mahmoud and Hamid, Muhammad Maaz and Imad, Muhammad and Ali, Raja Hashim},
+                        booktitle={2025 27th International Multitopic Conference (INMIC)}, 
+                        title={A Comparative Evaluation of Search and Metaheuristic Algorithms for the N-Queens Problem: Scalability, Efficiency, and Success Rates}, 
+                        year={2025},
+                        volume={},
+                        number={},
+                        pages={1-6},
+                        keywords={Scalability;Memory management;Metaheuristics;Simulated annealing;Benchmark testing;Search problems;Smart systems;Time factors;Reliability;Genetic algorithms;N-queens problem;optimization algorithms;genetic algorithm;exhaustive search;simulated annealing},
+                        doi={10.1109/INMIC65900.2025.11348196}}
+                      }`,
+                    )
+                  }
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
                 >
                   Cite (BibTeX)
