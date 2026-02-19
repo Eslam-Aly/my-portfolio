@@ -245,21 +245,18 @@ function Publications() {
           >
             <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between h-full">
               <h3 className="text-xl font-semibold mb-4">
-                <span className="text-primary">Coming soon:</span>
-                <br />
                 Explainable Expert System for Plant Disease and Plant Health
                 Detection Using Mobile Images
               </h3>
               <hr className="w-24 border text-primary border-primary" />
 
               <p className=" my-4 ">
-                This paper is currently under development and will be available
-                soon.
+                This thesis investigates explainable AI techniques for
+                interpretable plant health assessment using mobile imagery.
               </p>
               <ul className="list-disc list-inside space-y-3 my-6">
-                <li>Bachelor’s Thesis</li>
-
-                <li>Status: Coming Soon</li>
+                <li>📍 Bachelor’s Thesis</li>
+                <li>🟡 Status: In Progress</li>
               </ul>
             </div>
           </motion.div>
