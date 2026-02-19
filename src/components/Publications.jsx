@@ -28,7 +28,7 @@ function Publications() {
       id="publications"
       className=" text-black bg-[#f7f8fc] pt-18 md:pt-40"
     >
-      <div className="container mx-auto px-8 mb-20">
+      <div className="container mx-auto px-8 pb-20">
         <motion.div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
@@ -45,7 +45,7 @@ function Publications() {
             strategies.
           </p>
         </motion.div>
-        <div className="flex flex-col gap-12 xl:flex-row mx-auto  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:grid-cols-2 mx-auto">
           <motion.div
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -146,7 +146,7 @@ function Publications() {
                   }
                   className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
                 >
-                  View on IEEE INMIC
+                  View on IEEE Xplore
                 </button>
                 <button
                   onClick={() =>
@@ -169,6 +169,96 @@ function Publications() {
                   Cite (BibTeX)
                 </button>
               </div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.4 }}
+          >
+            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg ">
+              <h3 className="text-xl font-semibold mb-4">
+                Visualising Search Algorithms: A Practical Approach Using the
+                Rubik’s Cube
+              </h3>
+              <hr className="w-24 border text-primary border-primary" />
+
+              <p className=" my-4 ">
+                This work provides a scalable benchmarking framework for
+                evaluating classical search algorithms on the Rubik’s Cube,
+                highlighting performance trade-offs between optimality, memory
+                consumption, and computational efficiency.
+              </p>
+              <ul className="list-disc list-inside space-y-3 my-6">
+                <li>
+                  📍 2025 International Conference Automatics and Informatics
+                  (ICAI)
+                </li>
+                <li>
+                  👤 Authors: Eslam Aly, Syed Rizvi, Ahmed Hassan, Loubna Ali,
+                  Pratik Rughe
+                </li>
+                <li>✅ Status: Published (October 2025)</li>
+              </ul>
+
+              <div className="mt-auto grid gap-4 grid-cols-1 sm:grid-cols-2">
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://ieeexplore.ieee.org/document/11324678",
+                      "_blank",
+                    )
+                  }
+                  className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
+                >
+                  View on IEEE Xplore
+                </button>
+                <button
+                  onClick={() =>
+                    copyToClipboard(
+                      `@INPROCEEDINGS{11324678,
+                        author={Aly, Eslam and Abbas Rizvi, Syed Arslan and Hassan, Ahmed and Ali, Loubna and Rughe, Pratik Pradeep},
+                        booktitle={2025 International Conference Automatics and Informatics (ICAI)}, 
+                        title={Visualising Search Algorithms: A Practical Approach Using the Rubik’s Cube}, 
+                        year={2025},
+                        volume={},
+                        number={},
+                        pages={635-640},
+                        keywords={Visualization;Scalability;Memory management;Benchmark testing;Search problems;Performance metrics;Time measurement;Complexity theory;Time factors;Robots;Rubik’s Cube;combinatorial search;depth-first search;breadth-first search;A* search;benchmarking},
+                        doi={10.1109/ICAI67591.2025.11324678}}
+                      `,
+                    )
+                  }
+                  className="w-full bg-primary text-white py-2.5 px-4 text-sm font-medium rounded-md hover:bg-primary/80 transition cursor-pointer text-center"
+                >
+                  Cite (BibTeX)
+                </button>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.4 }}
+          >
+            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between h-full">
+              <h3 className="text-xl font-semibold mb-4">
+                coming soon: Explainable Expert System for Plant Disease and
+                Plant Health Detection Using Mobile Images
+              </h3>
+              <hr className="w-24 border text-primary border-primary" />
+
+              <p className=" my-4 ">
+                This paper is currently under development and will be available
+                soon.
+              </p>
+              <ul className="list-disc list-inside space-y-3 my-6">
+                <li>Bachelor’s Thesis</li>
+
+                <li>✅ Status: Coming Soon</li>
+              </ul>
             </div>
           </motion.div>
         </div>
