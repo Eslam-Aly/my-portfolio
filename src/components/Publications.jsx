@@ -52,7 +52,7 @@ function Publications() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg ">
+            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between h-full">
               <h3 className="text-xl font-semibold mb-4">
                 Toward Reliable Deepfake Detection: A CNN-Based Study on
                 Synthetic Faces
@@ -114,7 +114,7 @@ function Publications() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between">
+            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between h-full">
               <h3 className="text-xl font-semibold mb-4">
                 A Comparative Evaluation of Search and Metaheuristic Algorithms
                 for the N-Queens Problem: Scalability, Efficiency, and Success
@@ -177,7 +177,7 @@ function Publications() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg ">
+            <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between h-full">
               <h3 className="text-xl font-semibold mb-4">
                 Visualising Search Algorithms: A Practical Approach Using the
                 Rubik’s Cube
@@ -245,8 +245,10 @@ function Publications() {
           >
             <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between h-full">
               <h3 className="text-xl font-semibold mb-4">
-                coming soon: Explainable Expert System for Plant Disease and
-                Plant Health Detection Using Mobile Images
+                <span className="text-primary">Coming soon:</span>
+                <br />
+                Explainable Expert System for Plant Disease and Plant Health
+                Detection Using Mobile Images
               </h3>
               <hr className="w-24 border text-primary border-primary" />
 
@@ -257,7 +259,7 @@ function Publications() {
               <ul className="list-disc list-inside space-y-3 my-6">
                 <li>Bachelor’s Thesis</li>
 
-                <li>✅ Status: Coming Soon</li>
+                <li>Status: Coming Soon</li>
               </ul>
             </div>
           </motion.div>
