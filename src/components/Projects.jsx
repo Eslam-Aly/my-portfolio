@@ -43,14 +43,14 @@ function Projects() {
               className="flex flex-row flex-nowrap overflow-x-auto justify-between items-center lg:gap-12 lg:text-lg font-medium gap-1 cursor-pointer"
             >
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
+                Fake Face Detection
+              </Tab>
+              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
                 AqarDot
               </Tab>
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
                 {" "}
                 StoX
-              </Tab>
-              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
-                Fake Face Detection
               </Tab>
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
                 N Queens Solver
@@ -60,6 +60,106 @@ function Projects() {
               </Tab>
             </MotionTabList>
 
+            <TabPanel>
+              <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 bg-white rounded-lg p-12 font-secondary flex flex-col"
+                >
+                  <h3 className="text-3xl font-semibold text-primary ">
+                    Fake face Detection
+                  </h3>
+                  <p className="mb-4">
+                    Detecting deepfakes using Xception with transfer learning.
+                  </p>
+                  <h4 className="text-xl font-medium">Description:</h4>
+                  <p className="mb-8">
+                    With the rise of deepfakes, detecting AI-generated faces is
+                    critical to maintaining trust online. This project applies
+                    computer vision and deep learning to distinguish real from
+                    fake faces.
+                  </p>
+                  <h4 className="text-xl font-medium text-black mb-4">
+                    Features:
+                  </h4>
+                  <ul className="list-disc list-inside space-y-3 mb-4">
+                    <li>
+                      Implemented Xception CNN with transfer learning for
+                      classification.
+                    </li>
+                    <li>
+                      Preprocessed and trained on a large-scale real vs. fake
+                      image dataset.
+                    </li>
+                    <li>
+                      Achieved 92% validation accuracy, outperforming baseline
+                      models.
+                    </li>
+                    <li>
+                      Built a React web app for user-friendly face
+                      classification.
+                    </li>
+                  </ul>
+                  <p>
+                    <span className="text-xl font-medium">Tech Stack: </span>
+                    Python, TensorFlow, Keras, React, Google Colab.
+                  </p>
+                  <div className="flex flex-row gap-1 mt-4 items-center ">
+                    <p className="text-xl font-medium">Links:</p>
+                    <a
+                      href="https://github.com/Eslam-Aly/fake-face-detector-client.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Client Repo |
+                    </a>
+                    <a
+                      href="https://github.com/Eslam-Aly/fake-face-detector-api.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      API Repo |
+                    </a>
+                    <a
+                      href="https://fake-face-detector-client.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo |
+                    </a>
+                    <a
+                      href="https://sciforum.net/paper/view/27925"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Research Paper
+                    </a>
+                  </div>
+                </motion.div>
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 flex object-cover bg-black rounded-lg"
+                >
+                  <video
+                    className="w-full h-auto rounded-2xl "
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src={ffdDemoWebm} type="video/webm" />
+                    <source src={ffdDemoMp4} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </motion.div>
+              </div>
+            </TabPanel>
             <TabPanel>
               <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
                 <motion.div
@@ -154,7 +254,6 @@ function Projects() {
                 </motion.div>
               </div>
             </TabPanel>
-
             <TabPanel>
               <div className="flex flex-col lg:flex-row gap-8 mt-8 items-stretch">
                 <motion.div
@@ -229,92 +328,6 @@ function Projects() {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
-                <motion.div
-                  variants={fadeIn("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.4 }}
-                  className="xl:w-1/2 bg-white rounded-lg p-12 font-secondary flex flex-col"
-                >
-                  <h3 className="text-3xl font-semibold text-primary ">
-                    Fake face Detection
-                  </h3>
-                  <p className="mb-4">
-                    Detecting deepfakes using Xception with transfer learning.
-                  </p>
-                  <h4 className="text-xl font-medium">Description:</h4>
-                  <p className="mb-8">
-                    With the rise of deepfakes, detecting AI-generated faces is
-                    critical to maintaining trust online. This project applies
-                    computer vision and deep learning to distinguish real from
-                    fake faces.
-                  </p>
-                  <h4 className="text-xl font-medium text-black mb-4">
-                    Features:
-                  </h4>
-                  <ul className="list-disc list-inside space-y-3 mb-4">
-                    <li>
-                      Implemented Xception CNN with transfer learning for
-                      classification.
-                    </li>
-                    <li>
-                      Preprocessed and trained on a large-scale real vs. fake
-                      image dataset.
-                    </li>
-                    <li>
-                      Achieved 92% validation accuracy, outperforming baseline
-                      models.
-                    </li>
-                    <li>
-                      Built a Streamlit web app for user-friendly face
-                      classification.
-                    </li>
-                  </ul>
-                  <p>
-                    <span className="text-xl font-medium">Tech Stack: </span>
-                    Python, TensorFlow, Keras, Streamlit, Google Colab.
-                  </p>
-                  <div className="flex flex-row gap-1 mt-4 items-center ">
-                    <p className="text-xl font-medium">Links:</p>
-                    <a
-                      href="https://github.com/Eslam-Aly/fake-face-detection.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      GitHub |
-                    </a>
-                    <a
-                      href="https://huggingface.co/spaces/eslamaly/fake-face-detector"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Demo
-                    </a>
-                  </div>
-                </motion.div>
-                <motion.div
-                  variants={fadeIn("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.4 }}
-                  className="xl:w-1/2 flex object-cover bg-black rounded-lg"
-                >
-                  <video
-                    className="w-full h-auto rounded-2xl "
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  >
-                    <source src={ffdDemoWebm} type="video/webm" />
-                    <source src={ffdDemoMp4} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </motion.div>
-              </div>
-            </TabPanel>
-            <TabPanel>
               <div className="flex flex-col lg:flex-row gap-8 mt-8">
                 <motion.div
                   variants={fadeIn("up", 0.2)}
@@ -365,7 +378,14 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      GitHub
+                      GitHub |
+                    </a>
+                    <a
+                      href="https://ieeexplore.ieee.org/abstract/document/11348196"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Research Paper
                     </a>
                   </div>
                 </motion.div>
@@ -443,7 +463,14 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      GitHub
+                      GitHub |
+                    </a>
+                    <a
+                      href="https://ieeexplore.ieee.org/document/11324678"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Research Paper
                     </a>
                   </div>
                 </motion.div>
