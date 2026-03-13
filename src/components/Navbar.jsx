@@ -156,8 +156,8 @@ const Navbar = () => {
         {/* Menu Button */}
         <div className="hidden lg:block">
           <a
-            href="/Eslam_Aly_CV_2025.pdf"
-            download="Eslam_Aly_CV_2025.pdf"
+            href="/Eslam Aly – Lebenslauf.pdf"
+            download="Eslam Aly – Lebenslauf.pdf"
             className="text-white bg-primary hover:bg-primary/50 transition px-6 py-2 rounded-md text-lg"
           >
             Download CV
