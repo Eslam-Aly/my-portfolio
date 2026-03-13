@@ -28,8 +28,9 @@ function Projects() {
             Featured Projects
           </h1>
           <p className="md:w-1/2 mx-auto">
-            A collection of projects showcasing my skills in software
-            engineering, AI, and problem-solving.
+            A selection of full-stack platforms, AI systems, and research
+            projects demonstrating real-world software engineering and problem
+            solving.
           </p>
         </motion.div>
 
@@ -70,10 +71,11 @@ function Projects() {
                   className="xl:w-1/2 bg-white rounded-lg p-12 font-secondary flex flex-col"
                 >
                   <h3 className="text-3xl font-semibold text-primary ">
-                    Fake face Detection
+                    Fake Face Detection
                   </h3>
                   <p className="mb-4">
-                    Detecting deepfakes using Xception with transfer learning.
+                    AI system for detecting manipulated or AI-generated faces
+                    using Xception CNN and transfer learning.
                   </p>
                   <h4 className="text-xl font-medium">Description:</h4>
                   <p className="mb-8">
@@ -110,6 +112,13 @@ function Projects() {
                   <div className="flex flex-row gap-1 mt-4 items-center ">
                     <p className="text-xl font-medium">Links:</p>
                     <a
+                      href="https://fake-face-detector-client.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo |
+                    </a>
+                    <a
                       href="https://github.com/Eslam-Aly/fake-face-detector-client.git"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -123,13 +132,7 @@ function Projects() {
                     >
                       API Repo |
                     </a>
-                    <a
-                      href="https://fake-face-detector-client.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Demo |
-                    </a>
+
                     <a
                       href="https://sciforum.net/paper/view/27925"
                       target="_blank"

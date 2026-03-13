@@ -19,10 +19,11 @@ function About() {
               Software Engineer | Full-Stack Development | IT Systems
             </h2>
             <p className="text-lg">
-              Motivated full-stack engineer experienced in building scalable web
-              and cloud applications. Alongside development, I bring strengths
-              in DevOps (Docker, Kubernetes, CI/CD, AWS) and AI/ML (computer
-              vision, model deployment) to deliver complete solutions.
+              Software Engineer with experience in IT systems support,
+              full-stack application development, and cloud-based solutions. I
+              build modern web platforms, integrate APIs, and support digital
+              systems, while also bringing experience in automation, DevOps
+              tools, and AI-powered applications.
             </p>
           </div>
           <div className="flex flex-col mx-auto justify-between  lg:flex-row  pb-12 ">
@@ -35,13 +36,15 @@ function About() {
                   <span className="font-medium text-black">
                     B.Sc. Software Engineering
                   </span>{" "}
-                  – University of Europe for Applied Sciences (Germany)
+                  – University of Europe for Applied Sciences (Germany) · Grade:
+                  1.7
                 </li>
                 <li>
                   <span className="font-medium text-black">
                     B.Sc. Software Engineering
                   </span>{" "}
-                  – Kyiv Polytechnic Institute (Ukraine) – 3 semesters
+                  – Kyiv Polytechnic Institute (Ukraine) – 3 semesters completed
+                  · Grade: 1.7
                 </li>
               </ul>
               <h3 className="text-lg font-bold mb-2 font-secondary">
@@ -49,8 +52,10 @@ function About() {
               </h3>
               <ul className="mb-8 space-y-1">
                 <li>
-                  <span className="font-medium text-black">IT Help Desk</span> –
-                  Kyiv, Feb 2021 – Feb 2022
+                  <span className="font-medium text-black">
+                    IT Help Desk Specialist
+                  </span>{" "}
+                  – Kyiv, Feb 2021 – Feb 2022
                 </li>
                 <li>
                   <span className="font-medium text-black">
@@ -67,16 +72,17 @@ function About() {
               <ul className=" space-y-2">
                 <li>
                   <span className="font-medium text-black">
-                    Full-Stack Development:
-                  </span>{" "}
-                  React, TypeScript, JavaScript, HTML5, CSS/SCSS, Node.js,
-                  Firebase, REST APIs, Tailwind CSS, MongoDB, PostgreSQL
-                </li>
-                <li>
-                  <span className="font-medium text-black">
                     Programming Languages:
                   </span>{" "}
-                  JavaScript, TypeScript, Dart, Python, SQL
+                  JavaScript, Dart, Python, SQL
+                </li>
+                <li>
+                  <span className="font-medium text-black">Frontend:</span>{" "}
+                  React, Flutter, Tailwind CSS
+                </li>
+                <li>
+                  <span className="font-medium text-black">Backend:</span>{" "}
+                  Node.js, MongoDB, Firebase, REST APIs
                 </li>
                 <li>
                   <span className="font-medium text-black">
@@ -85,7 +91,6 @@ function About() {
                   Git, Docker, Kubernetes, GitHub Actions, CI/CD, Linux
                   (Ubuntu), Linux Shell (Bash), AWS
                 </li>
-
                 <li>
                   <span className="font-medium text-black">
                     Security & Code Quality:

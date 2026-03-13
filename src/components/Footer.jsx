@@ -24,9 +24,9 @@ function Footer() {
             <h3 className="text-xl font-semibold">About</h3>
           </div>
           <p className="text-paragraph">
-            Motivated and results-oriented software engineer with a solid
-            academic background and hands-on experience in DevOps, cloud
-            infrastructure, and full-stack development.
+            Software engineer with experience in IT systems support, full-stack
+            development, and cloud-based applications. Passionate about solving
+            real-world problems.
           </p>
         </div>
 
