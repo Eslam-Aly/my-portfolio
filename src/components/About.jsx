@@ -16,7 +16,7 @@ function About() {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl font-secondary font-bold mb-4 leading-snug">
-              Full-Stack Engineer | AI & DevOps Enthusiast
+              Software Engineer | Full-Stack Development | IT Systems
             </h2>
             <p className="text-lg">
               Motivated full-stack engineer experienced in building scalable web
@@ -103,8 +103,8 @@ function About() {
           </div>
           <button className="bg-primary text-white py-3.5 px-8 font-medium rounded-md hover:bg-primary/50 transition cursor-pointer">
             <a
-              href="/Eslam_Aly_CV_2025.pdf"
-              download="Eslam_Aly_CV_2025.pdf"
+              href="/Eslam Aly – Lebenslauf.pdf"
+              download="Eslam Aly – Lebenslauf.pdf"
               className="flex gap-1 items-center "
             >
               <span>Download CV</span>

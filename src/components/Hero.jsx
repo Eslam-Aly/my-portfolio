@@ -31,11 +31,12 @@ function Hero() {
           <h1 className="text-3xl  font-secondary font-bold leading-snug">
             Eslam Aly
           </h1>
-          <h2 className="text-2xl font-light mb-4">Full-Stack Engineer</h2>
+          <h2 className="text-2xl font-light mb-4">
+            Software Engineer | Full-Stack Development | IT Systems
+          </h2>
           <p className="text-sm md:text-lg mb-12 ">
-            Full-Stack Engineer specializing in React, TypeScript, Node.js,
-            MongoDB, and DevOps tools such as Docker, Kubernetes, and CI/CD
-            pipelines.
+            Software Engineer with experience in IT systems, full-stack
+            development, and cloud-based applications.
           </p>
           <button
             onClick={handleScroll}
