@@ -108,8 +108,8 @@ function About() {
           </div>
           <button className="bg-primary text-white py-3.5 px-8 font-medium rounded-md hover:bg-primary/50 transition cursor-pointer">
             <a
-              href="/Eslam Aly – Lebenslauf.pdf"
-              download="Eslam Aly – Lebenslauf.pdf"
+              href="/Eslam_Aly_CV.pdf"
+              download="Eslam_Aly_CV.pdf"
               className="flex gap-1 items-center "
             >
               <span>Download CV</span>
