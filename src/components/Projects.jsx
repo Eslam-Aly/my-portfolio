@@ -3,6 +3,8 @@ import fadeIn from "../utilis/animationVariants";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ffdDemoWebm from "../assets/FFDDemo.webm";
 import ffdDemoMp4 from "../assets/FFDemo.mp4";
+import pddDemoWebm from "../assets/PDDDemo.webm";
+import pddDemoMp4 from "../assets/PDDDemo.mp4";
 import stoxDemoWebm from "../assets/StoxDemo.webm";
 import stoxDemoMp4 from "../assets/StoXDemo.mp4";
 import NQueenWebM from "../assets/N-QueenDemo1.webm";
@@ -44,6 +46,9 @@ function Projects() {
               className="flex flex-row flex-nowrap overflow-x-auto justify-between items-center lg:gap-12 lg:text-lg font-medium gap-1 cursor-pointer"
             >
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
+                Plant Disease Detector
+              </Tab>
+              <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
                 Fake Face Detection
               </Tab>
               <Tab className="shrink-0 h-10 px-4 inline-flex items-center justify-center rounded-md bg-white text-sm md:text-base whitespace-nowrap">
@@ -61,6 +66,100 @@ function Projects() {
               </Tab>
             </MotionTabList>
 
+            <TabPanel>
+              <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 bg-white rounded-lg p-12 font-secondary flex flex-col"
+                >
+                  <h3 className="text-3xl font-semibold text-primary ">
+                    Plant Disease Detector
+                  </h3>
+                  <p className="mb-4">
+                    AI system for detecting plant diseases using computer vision
+                    and deep learning.
+                  </p>
+                  <h4 className="text-xl font-medium">Description:</h4>
+                  <p className="mb-8">
+                    This project applies computer vision and deep learning
+                    techniques to identify plant diseases from leaf images. The
+                    system is designed to support fast and accessible plant
+                    health assessment using AI-powered image classification.
+                  </p>
+                  <h4 className="text-xl font-medium text-black mb-4">
+                    Features:
+                  </h4>
+                  <ul className="list-disc list-inside space-y-3 mb-4">
+                    <li>
+                      Implemented deep learning models for multi-class plant
+                      disease classification.
+                    </li>
+                    <li>
+                      Trained and evaluated CNN architectures on plant disease
+                      image datasets.
+                    </li>
+                    <li>
+                      Integrated explainable AI techniques for visual
+                      interpretation of predictions.
+                    </li>
+                    <li>
+                      Built a responsive web interface for image upload and
+                      real-time diagnosis.
+                    </li>
+                  </ul>
+                  <p>
+                    <span className="text-xl font-medium">Tech Stack: </span>
+                    Python, TensorFlow, Keras, React, Google Colab.
+                  </p>
+                  <div className="flex flex-row gap-1 mt-4 items-center ">
+                    <p className="text-xl font-medium">Links:</p>
+                    <a
+                      href="https://plant-disease-detector-client.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo |
+                    </a>
+                    <a
+                      href="https://github.com/Eslam-Aly/plant-disease-detector-client.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Client Repo |
+                    </a>
+                    <a
+                      href="https://github.com/Eslam-Aly/plant-disease-detector-api.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      API Repo
+                    </a>
+                  </div>
+                </motion.div>
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.4 }}
+                  className="xl:w-1/2 flex object-cover bg-black rounded-lg"
+                >
+                  <video
+                    className="w-full h-auto rounded-2xl "
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src={pddDemoWebm} type="video/webm" />
+                    <source src={pddDemoMp4} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </motion.div>
+              </div>
+            </TabPanel>
             <TabPanel>
               <div className="flex flex-col xl:flex-row gap-8 mt-8 items-stretch">
                 <motion.div
