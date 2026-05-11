@@ -245,18 +245,19 @@ function Publications() {
           >
             <div className="bg-white rounded-lg p-12 flex-1 shadow-lg flex flex-col justify-between h-full">
               <h3 className="text-xl font-semibold mb-4">
-                Explainable Expert System for Plant Disease and Plant Health
-                Detection Using Mobile Images
+                Uncertainty-Aware and Explainable Deep Learning Framework for
+                Robust Plant Disease Diagnosis Under Real-World Conditions
               </h3>
               <hr className="w-24 border text-primary border-primary" />
 
               <p className=" my-4 ">
-                This thesis investigates explainable AI techniques for
-                interpretable plant health assessment using mobile imagery.
+                This thesis investigates explainable AI, uncertainty-aware deep
+                learning, and expert-system-assisted plant disease diagnosis
+                using computer vision techniques.
               </p>
               <ul className="list-disc list-inside space-y-3 my-6">
                 <li>📍 Bachelor’s Thesis</li>
-                <li>🟡 Status: In Progress</li>
+                <li>🟡 Status: Ongoing (Expected 2026)</li>
               </ul>
             </div>
           </motion.div>

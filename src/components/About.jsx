@@ -16,14 +16,13 @@ function About() {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl font-secondary font-bold mb-4 leading-snug">
-              Software Engineer | Full-Stack Development | IT Systems
+              Software Engineer | AI Enthusiast
             </h2>
             <p className="text-lg">
-              Software Engineer with experience in IT systems support,
-              full-stack application development, and cloud-based solutions. I
-              build modern web platforms, integrate APIs, and support digital
-              systems, while also bringing experience in automation, DevOps
-              tools, and AI-powered applications.
+              Software Engineer with experience in full-stack development, AI
+              systems, and cloud-based applications. I develop modern web
+              platforms and AI-powered applications using technologies across
+              frontend, backend, DevOps, and machine learning.
             </p>
           </div>
           <div className="flex flex-col mx-auto justify-between  lg:flex-row  pb-12 ">
@@ -53,6 +52,12 @@ function About() {
               <ul className="mb-8 space-y-1">
                 <li>
                   <span className="font-medium text-black">
+                    Software Engineer Intern
+                  </span>{" "}
+                  – Remote, Oct 2025 – Present
+                </li>
+                <li>
+                  <span className="font-medium text-black">
                     IT Help Desk Specialist
                   </span>{" "}
                   – Kyiv, Feb 2021 – Feb 2022
@@ -67,7 +72,7 @@ function About() {
             </div>
             <div className="mb-4 lg:mb-0 lg:mr-8 bg-white p-6 rounded-lg shadow-md flex-1">
               <h3 className="text-lg font-bold mb-2 font-secondary">
-                Specializations:
+                Technical Skills:
               </h3>
               <ul className=" space-y-2">
                 <li>
@@ -102,6 +107,13 @@ function About() {
                     Collaboration & Tools:
                   </span>{" "}
                   Git, Jira, Confluence, Figma, Overleaf, VS Code, Microsoft 365
+                </li>
+                <li>
+                  <span className="font-medium text-black">
+                    AI & Machine Learning:
+                  </span>{" "}
+                  TensorFlow, Keras, PyTorch, Computer Vision, XAI, Transfer
+                  Learning
                 </li>
               </ul>
             </div>

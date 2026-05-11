@@ -32,11 +32,11 @@ function Hero() {
             Eslam Aly
           </h1>
           <h2 className="text-2xl font-light mb-4">
-            Software Engineer | Full-Stack Development | IT Systems
+            Software Engineer | AI Enthusiast
           </h2>
           <p className="text-sm md:text-lg mb-12 ">
-            Software Engineer with experience in IT systems, full-stack
-            development, and cloud-based applications.
+            Software Engineer with experience in full-stack development, AI
+            systems, and cloud-based applications.
           </p>
           <button
             onClick={handleScroll}
